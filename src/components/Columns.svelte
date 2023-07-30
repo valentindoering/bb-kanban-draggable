@@ -210,40 +210,11 @@
       >
         {arrayName + " - " + column.length}
       </h2>
-      <button
-        disabled={arrayName === "Backlog"}
-        on:click={deleteColumn(arrayName)}
-        class="spectrum-ClearButton spectrum-ClearButton--sizeXL"
-      >
-        <div class="spectrum-ClearButton-fill">
-          <svg
-            class="spectrum-ClearButton-icon spectrum-Icon spectrum-UIIcon-Cross300"
-            focusable="false"
-            aria-hidden="true"
-          >
-            <use xlink:href="#spectrum-css-icon-Cross300" />
-          </svg>
-        </div>
-      </button>
     </div>
     <div class="flexed">
       <div class="spectrum-Detail spectrum-Detail--sizeM">
         {column.length} cards
       </div>
-      <button
-        class="spectrum-ClearButton spectrum-ClearButton--sizeL"
-        on:click={addCard(arrayName)}
-      >
-        <div class="spectrum-ClearButton-fill">
-          <svg
-            class="spectrum-Icon spectrum-ClearButton-icon spectrum-Icon--sizeL spectrum-icon-18-Add"
-            focusable="false"
-            aria-hidden="true"
-          >
-            <use xlink:href="#spectrum-icon-18-Add" />
-          </svg>
-        </div>
-      </button>
     </div>
     <div class="h-full">
       <Card

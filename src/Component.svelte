@@ -199,19 +199,6 @@
       />
     </div>
     <p>You have a total of {Object.keys(columns).length} columns</p>
-
-    <Modal bind:this={modal}>
-      <ModalContent title="Add Column" size="S" onConfirm={addColumn}>
-        <form>
-          <Layout noPadding gap="S">
-            <div class="form-row">
-              <Label>Column Title</Label>
-              <Input on:change bind:value={newColumnTitle} />
-            </div>
-          </Layout>
-        </form>
-      </ModalContent>
-    </Modal>
     <Modal bind:this={orderModal}>
       <ModalContent title="Columns Positions" size="XL" onConfirm={refreshColumns}>
         <SortColumns

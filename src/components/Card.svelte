@@ -76,27 +76,6 @@
             ? item.Title.substring(0, 35) + "..."
             : item.Title}
         </div>
-        <button
-          on:click={() =>
-            deleteItem(
-              arrayName,
-              item["Auto ID"],
-              item.tableId,
-              item._rev,
-              item._id
-            )}
-          class="spectrum-ClearButton spectrum-ClearButton--sizeL"
-        >
-          <div class="spectrum-ClearButton-fill">
-            <svg
-              class="spectrum-ClearButton-icon spectrum-Icon spectrum-UIIcon-Cross200"
-              focusable="false"
-              aria-hidden="true"
-            >
-              <use xlink:href="#spectrum-css-icon-Cross200" />
-            </svg>
-          </div>
-        </button>
       </div>
       <div class="spectrum-Card-content">
         {#if item.Description != undefined}
